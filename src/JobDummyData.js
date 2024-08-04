@@ -1,3 +1,5 @@
+import React from "react";
+import Jobcard from './componets/Jobcard';
 export default[
 {
 
@@ -14,7 +16,7 @@ export default[
 },
 {
     id: 2,
-    postedOn: '2024-07-11',
+    postedOn: '2024-07-10',
     title: 'Frontend Developer',
     company: 'Google',
     type: 'Full Time',

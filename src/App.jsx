@@ -1,8 +1,10 @@
-import Navbar from "./componets/Navbar";
-import Header from "./componets/Header";
-import SearchBar from "./componets/Searchbar";
-import JobCard from "./componets/Jobcard";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import SearchBar from "./components/Searchbar";
+import JobCard from "./components/Jobcard";
 import jobData from "./JobDummyData";
+import UserLogin from "./components/UserLogin";
+
 function App() {
   return (
     <div>
@@ -10,8 +12,9 @@ function App() {
       <Header />
       <SearchBar />
       {jobData.map((job) => (
-        <JobCard key={job.id} job={job} />
+        <JobCard {...job} />
       ))}
+      <UserLogin />
     </div>
   );
 }
